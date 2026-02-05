@@ -1,5 +1,5 @@
-# 允许从外部传入 Alpine 版本，默认为 3.23.3
-ARG ALPINE_VER=3.23.3
+# 允许从外部传入 Alpine 版本，默认为 3.23
+ARG ALPINE_VER=3.23
 FROM alpine:${ALPINE_VER}
 
 RUN apk add --no-cache iperf3
