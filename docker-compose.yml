@@ -1,0 +1,9 @@
+services:
+  iperf3:
+    image: ghcr.io/driftingwind/iperf3
+    container_name: iperf3
+    restart: unless-stopped
+    ports:
+      - 5201:5201
+      - 5201:5201/udp
+    command: -s
