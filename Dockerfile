@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add --no-cache -X https://dl-cdn.alpinelinux.org/alpine/edge/main iperf3
+RUN apk add --no-cache iperf3
 
 EXPOSE 5201
 
