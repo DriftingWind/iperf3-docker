@@ -36,11 +36,18 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Extract metadate
+      id: meta
+      uses: docker/metadata-action@v5
+      with:
+        images: ghcr.io/driftingwind/iperf3
+        tags: |
+          type=raw,value=${{ matrix.repo_type }}
+          type=raw,value=latest,enable=${{ matrix.repo_type == 'stable' }}
+
     - name: Build and push
       uses: docker/build-push-action@v6
       with:
-        file: ./${{ matrix.dockerfile }}        
+        file: ./${{ matrix.dockerfile }}
         push: true
-        tags: |
-          ghcr.io/driftingwind/iperf3:${{ matrix.repo_type }}
-          ${{ matrix.repo_type == 'stable' && 'ghcr.io/driftingwind/iperf3:latest' || '' }}
+        tags: ${{ steps.meta.outputs.tags }}
