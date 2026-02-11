@@ -60,7 +60,7 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         file: ./${{ matrix.dockerfile }}
-        push: false
+        push: true
         tags: ${{ steps.meta.outputs.tags }}
         cache-from: type=gha
         cache-to: type=gha,mode=max
