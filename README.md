@@ -1,7 +1,8 @@
 ## iPerf3 使用 Alpine 打包的 Docker 映像
 
 给不便于安装和运行二进制文件的系统（例如群晖 DSM）或想通过 Docker 部署服务端后台运行使用
-同步推送到 GHCR 和 Docker Hub
+
+同步推送到 [GHCR](https://github.com/DriftingWind/iperf3-docker/pkgs/container/iperf3) 和 [Docker Hub](https://hub.docker.com/r/driftingwind/iperf3)
 
 - 版本 3.19 [(3.19.1-r1 2025-10-18 08:34:04)](https://pkgs.alpinelinux.org/package/v3.23/main/x86_64/iperf3)
 ```bash
