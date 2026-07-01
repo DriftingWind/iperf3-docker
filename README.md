@@ -4,7 +4,7 @@
 
 同步推送到 [GHCR](https://github.com/DriftingWind/iperf3-docker/pkgs/container/iperf3) 和 [Docker Hub](https://hub.docker.com/r/driftingwind/iperf3)
 
-- 版本 3.19 [(3.19.1-r1 2025-10-18 08:34:04)](https://pkgs.alpinelinux.org/package/v3.23/main/x86_64/iperf3)
+- 版本 3.20 [(3.20-r0 2026-02-05 21:45:58)](https://pkgs.alpinelinux.org/package/v3.24/main/x86_64/iperf3)
 ```bash
 sudo docker pull ghcr.io/driftingwind/iperf3:latest
 ```
@@ -12,7 +12,7 @@ sudo docker pull ghcr.io/driftingwind/iperf3:latest
 ```bash
 sudo docker pull ghcr.io/driftingwind/iperf3:stable
 ```
-- 版本 3.20 [(3.20-r0 2026-02-05 21:45:58)](https://pkgs.alpinelinux.org/package/edge/main/x86_64/iperf3)
+- 版本 3.21 [(3.21-r0 2026-06-10 08:46:29)](https://pkgs.alpinelinux.org/package/edge/main/x86_64/iperf3)
 ```bash
 sudo docker pull ghcr.io/driftingwind/iperf3:edge
 ```
